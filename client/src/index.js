@@ -11,6 +11,17 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+const express = require('express')
+const app = express();
+const path = require("path");
+const PORT = 8000;
+
+app.use(express.static(path.join(__dirname,'client','build')));
+
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
+});
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
