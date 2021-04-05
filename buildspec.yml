@@ -5,6 +5,8 @@ phases:
     commands:
       #installs dependencies into the node_modules/ directory
       - npm install
+      - cd src
+      - npm install
   build:
     commands:
       - echo Build started on `date`
