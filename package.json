@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "react": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "express": "^4.17.1"
   },
   "scripts": {
     "start": "(set PORT=3030 || export PORT=3030) && react-scripts start",
@@ -16,8 +13,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "description": ""
 }
